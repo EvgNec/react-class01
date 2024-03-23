@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Lections #1",
+    "location": "Kiev",
+    "speaker": "QQQQQQQqqq",
+    "type": "free",
+    "time": {
+      "start": "2024-04-01T09:00:00",
+      "end": "2024-04-01T11:00:00"
+    }
+  },
+  {
+    "name": "Lections #2",
+    "location": "Kiev",
+    "speaker": "QQQQQQQqqq",
+    "type": "free",
+    "time": {
+      "start": "2024-04-02T09:00:00",
+      "end": "2024-04-02T11:00:00"
+    }
+  },
+    {
+    "name": "Lections #4",
+    "location": "Kiev",
+    "speaker": "QQQQQQQqqq",
+    "type": "free",
+    "time": {
+      "start": "2024-04-02T11:00:00",
+      "end": "2024-04-02T13:00:00"
+    }
+  },
+    {
+    "name": "Lections #3",
+    "location": "Kiev",
+    "speaker": "QQQQQQQqqq",
+    "type": "free",
+    "time": {
+      "start": "2024-04-01T13:00:00",
+      "end": "2024-04-01T15:00:00"
+    }
+  },
+    {
+    "name": "Lections #15",
+    "location": "Kiev",
+    "speaker": "QQQQQQQqqq",
+    "type": "free",
+    "time": {
+      "start": "2024-04-01T15:00:00",
+      "end": "2024-04-01T18:00:00"
+    }
+  },
+    {
+    "name": "Lections #6",
+    "location": "Kiev",
+    "speaker": "QQQQQQQqqq",
+    "type": "free",
+    "time": {
+      "start": "2024-04-01T11:00:00",
+      "end": "2024-04-01T13:00:00"
+    }
+  }
+]
