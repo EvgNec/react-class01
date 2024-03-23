@@ -30,6 +30,7 @@
     display: block;
     margin-right: 8px;
     color: var(--color-secondary-text);
+    size: 16px;
 }
 
 .chip {
