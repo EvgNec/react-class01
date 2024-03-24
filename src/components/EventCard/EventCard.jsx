@@ -1,8 +1,7 @@
 import css from "./EventCard.module.css";
 import PropTypes from "prop-types";
 import { FaMapMarkerAlt, FaUserAlt, FaCalendarAlt, FaClock } from "react-icons/fa";
-import { formatEventStart } from '../../utils/formatEventStart';
-import { formatEventDuration } from '../../utils/formatEventDuration';
+import { formatEventStart,  formatEventDuration } from '../../utils';
 
 export const EventCard = ({ name, location, speaker, type, start, end }) => {
     const formattedStart = formatEventStart(start);
@@ -26,7 +25,7 @@ export const EventCard = ({ name, location, speaker, type, start, end }) => {
         <FaClock />
         {formattedDuration}
       </p>
-      {/* <span class="chip free|paid|vip">Event types</span> */}
+      <span class={`${css.chip} ${css[type]}`}>{type}</span>
     </div>
   );
 };
