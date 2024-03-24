@@ -1,6 +1,7 @@
 import css from "./EventCard.module.css";
 import PropTypes from "prop-types";
 import { FaMapMarkerAlt, FaUserAlt, FaCalendarAlt, FaClock } from "react-icons/fa";
+import { formatEventStart } from '../../FormatEventStart';
 
 export const EventCard = ({ name, location, speaker, type, start, end }) => {
   return (
