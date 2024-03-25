@@ -1,33 +1,39 @@
-import css from "./EventCard2.module.css";
+import { Event, EventName, Info, Chip, Chip2 } from "./EventCard2.styled";
 import PropTypes from "prop-types";
-import { FaMapMarkerAlt, FaUserAlt, FaCalendarAlt, FaClock } from "react-icons/fa";
-import { formatEventStart, formatEventDuration } from '../../utils';
-import { iconSize } from '../../constans';
+import {
+  FaMapMarkerAlt,
+  FaUserAlt,
+  FaCalendarAlt,
+  FaClock,
+} from "react-icons/fa";
+import { formatEventStart, formatEventDuration } from "../../utils";
+import { iconSize } from "../../constans";
 
 export const EventCard2 = ({ name, location, speaker, type, start, end }) => {
-    const formattedStart = formatEventStart(start);
-    const formattedDuration = formatEventDuration(start, end);
+  const formattedStart = formatEventStart(start);
+  const formattedDuration = formatEventDuration(start, end);
   return (
-    <div className={css.event}>
-      <h2 className={css.title}>{name}</h2>
-      <p className={css.info}>
-              <FaMapMarkerAlt className={css.icon} size={iconSize.sm} color="red"/>
-              {location}
-      </p>
-      <p className={css.info}>
-        <FaUserAlt  className={css.icon} size={iconSize.sm} />
+    <Event>
+      <EventName>{name}</EventName>
+      <Info>
+        <FaMapMarkerAlt  size={iconSize.sm} color="red" />
+        {location}
+      </Info>
+      <Info>
+        <FaUserAlt  size={iconSize.sm} />
         {speaker}
-      </p>
-      <p className={css.info}>
-        <FaCalendarAlt  className={css.icon} size={iconSize.sm} />
+      </Info>
+      <Info>
+        <FaCalendarAlt size={iconSize.sm} />
         {formattedStart}
-      </p>
-      <p className={css.info}>
-        <FaClock  className={css.icon} size={iconSize.sm} />
+      </Info>
+      <Info>
+        <FaClock  size={iconSize.sm} />
         {formattedDuration}
-      </p>
-      <span className={`${css.chip} ${css[type]}`}>{type}</span>
-    </div>
+      </Info>
+      <Chip eventType={type}>{type}</Chip>
+      <Chip2 eventType={type}>{type}</Chip2>
+    </Event>
   );
 };
 
