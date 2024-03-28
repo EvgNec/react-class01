@@ -22,6 +22,7 @@ export const Info = styled.p`
   margin-top: 0;
   margin-bottom: 8px;
   color: var(--color-primary-text);
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
